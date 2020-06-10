@@ -1,0 +1,18 @@
+#reasults-container {
+    border-style: groove;
+    border-color: black;
+    border-width: 5px;
+}
+
+body {
+    background-color: #ceeb;
+}
+
+.callout {
+    background-color: hsl(196, 26%, 75%)
+
+}
+.origin{
+    background-color: antiquewhite;
+    padding:8 px;
+}
