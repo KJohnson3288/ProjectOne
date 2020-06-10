@@ -56,10 +56,13 @@ $(document).on("click", ".return", function(){
 
 $("#search").on("click", function(){
 
+    getFlights() 
+})
 
+function getFlights() {
+
+$("#reasults-container").empty()
 var origin = $("#originLocation").val()
-console.log(origin)
-
 var destination = $("#destinationLocation").val()
 var departDate = $("#departDate").val()
 var returnDate = $("#returnDate").val()
@@ -101,16 +104,10 @@ $.ajax(settings2).done(function (response) {
         var minprice = response.Quotes[i].MinPrice
         var carrier = obj[response.Quotes[i].OutboundLeg.CarrierIds[0]]
         var date = moment(response.Quotes[i].OutboundLeg.DepartureDate).format("LL")
-        
-        console.log("Direct: "+direct)
-        console.log("Price: "+minprice)
-        console.log("Carrier: "+carrier)
-        console.log("Date: " +date)
-
 
         var flightDiv = $("<div>")
         var directDiv = $("<div>").text("Direct: "+direct)
-        var priceDiv = $("<div>").text("Price: "+minprice)
+        var priceDiv = $("<div>").text("Price: $"+minprice)
         var carrierDiv = $("<div>").text("Carrier: "+carrier)
         var dateDiv = $("<div>").text("Date: " +date)
         flightDiv.attr("class", "border-dark")
@@ -123,7 +120,7 @@ $.ajax(settings2).done(function (response) {
     
 });
 
-})
+}
 
 
 var cities = {
