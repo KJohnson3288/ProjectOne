@@ -31,24 +31,26 @@
        
         <!--Container for user input forms-->
         <div class="cell small-6 flight-info">User info input here
-            <div class="cell"><span class="label primary">Origin</span><input id="originLocation"></div>
+            <div class="cell"><span class="label primary">Origin</span></div>
 
             
-                   <!--Dropdown menu for airline codes-->  
-                   
-                   <!--
-                   <ul class="dropdown menu" data-dropdown-menu>
+        <!--Dropdown menu for airline codes-->  
+                   <ul class="dropdown menu" data-dropdown-menu id="originLocation">
                     <li><a href="#">Codes</a>
                       <ul class="menu">
                       </ul>
                     </li>
-                </ul>
-              </div>
-              -->
+                  </ul>
+        <!--Dropdown menu for destination-->
+            <div class="cell"><span class="label primary">Destination</span>
+              <ul class="dropdown menu" data-dropdown-menu id="destinationLocation">
+                <li><a href="#">Codes</a>
+                  <ul class="menu">
+                  </ul>
+                </li>
+              </ul>
+            </div>
             
-
-
-            <div class="cell"><span class="label primary">Destination</span><input id="destinationLocation"></div>
             <div class="cell"><span class="label primary">Departure</span><input id="departDate" placeholder="yyyy-mm-dd" type="date"></div>
             <div class="cell"><span class="label primary">Arrival</span><input id="returnDate" placeholder="yyyy-mm-dd" type="date"></div>
             <div class="cell"><br></div>
@@ -63,7 +65,20 @@
         </div>
       </div>
 
-    
+      <!--Foundation-->
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).foundation();
+    </script>    
 <script src="script.js"></script>
 </body>
 </html>
