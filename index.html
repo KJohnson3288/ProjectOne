@@ -31,25 +31,26 @@
        
         <!--Container for user input forms-->
         <div class="cell small-6 flight-info">User info input here
-            <div class="cell"><span class="label primary">Origin</span></div>
 
-            
-        <!--Dropdown menu for airline codes-->  
-                   <ul class="dropdown menu" data-dropdown-menu id="originLocation">
-                    <li><a href="#">Codes</a>
-                      <ul class="menu">
-                      </ul>
-                    </li>
-                  </ul>
+        <div class="cell"><span class="label primary">Origin</span></div> 
+        <div class="cell"> 
+        <select class="dropdown menu" data-dropdown-menu id="originLocation"> 
+        <option value="" selected disabled hidden> 
+          Select an Option 
+      </option>
+    </select>
+        </div>
+                
         <!--Dropdown menu for destination-->
-            <div class="cell"><span class="label primary">Destination</span>
-              <ul class="dropdown menu" data-dropdown-menu id="destinationLocation">
-                <li><a href="#">Codes</a>
-                  <ul class="menu">
-                  </ul>
-                </li>
-              </ul>
-            </div>
+        <div class="cell"><span class="label primary">Destination</span></div> 
+        <div class="cell"> 
+        <select class="dropdown menu" data-dropdown-menu id="destinationLocation"> 
+          <option value="" selected disabled hidden> 
+          Select an Option 
+      </option>
+     </select>
+        </div>
+           
             
             <div class="cell"><span class="label primary">Departure</span><input id="departDate" placeholder="yyyy-mm-dd" type="date"></div>
             <div class="cell"><span class="label primary">Arrival</span><input id="returnDate" placeholder="yyyy-mm-dd" type="date"></div>
