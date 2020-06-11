@@ -1,3 +1,23 @@
+
+
+.h1{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.cell{
+    font-family:'Josefin Sans', sans-serif;
+    ;
+    ;
+
+}
+
+.card{
+    font-family:'Josefin Sans', sans-serif;
+
+}
+
+
 #reasults-container {
     border-style: groove;
     border-color: black;
@@ -16,4 +36,3 @@ body {
     background-color: antiquewhite;
     padding:8 px;
 }
-
