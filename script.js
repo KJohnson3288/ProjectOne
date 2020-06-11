@@ -32,11 +32,39 @@ $.ajax(settings).done(function (response) {
 
         button.attr("data-date", date)
         button.attr("class", "depart success button")
-        button.text("Depart")
+        button.text("Depart").css("color", "white").css("font-size", "12px")
+        button.css("background-color", "green")
+        button.css("border-style", "groove")
+        button.css("border-width", "2px")
+        button.css("border-color", "black")
+        button.css("border-radius", "10%")
+        button.css("margin", "5px")
+        button.hover(function() {
+            $(this).css("background-color", "lightgreen")
+            $(this).css("color", "black")
+        }, function() {
+            $(this).css("background-color", "green")
+            $(this).css("color", "white")
+        })
+        
 
         button2.attr("data-date", date)
-        button2.text("Return")
+        button2.text("Return").css("color", "white").css("font-size", "12px")
         button2.attr("class", "return success button")
+        button2.css("background-color", "green")
+        button2.css("border-style", "groove")
+        button2.css("border-width", "2px")
+        button2.css("border-color", "black")
+        button2.css("border-radius", "10%")
+        button2.css("margin", "5px")
+        button2.hover(function() {
+            $(this).css("background-color", "lightgreen")
+            $(this).css("color", "black")
+        }, function() {
+            $(this).css("background-color", "green")
+            $(this).css("color", "white")
+        })
+        
 
         $(".holiday-container").append(div)
         $(".holiday-container").append(button)
@@ -62,6 +90,7 @@ $("#search").on("click", function(){
 function getFlights() {
 
 $("#reasults-container").empty()
+$("#reasults-container").css("padding", "2px")
 var origin = $("#originLocation").val()
 console.log(origin)
 
